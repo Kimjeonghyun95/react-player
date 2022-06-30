@@ -139,7 +139,6 @@ function Player() {
   }
 
   const getDashData = dash => {
-    console.log('dash', dash)
     setQuality(dash)
   }
 
@@ -202,7 +201,6 @@ function Player() {
           light={false}
           onReady={() => {
             getDashData(playerRef?.current?.player?.player?.dash)
-            console.log('시작했다!')
           }}
           config={{
             file: {
